@@ -3,21 +3,21 @@
 #include <PubSubClient.h>
 
 // Wi-Fi credentials
-const char* ssid = "XXXX";
-const char* password = "12345678";
+const char* ssid = "xxxxx";
+const char* password = "xxxxxx";
 
 // MQTT Broker
 const char* mqttServer = "broker.hivemq.com";
 const int mqttPort = 1883;
 const char* mqttClientID = "esp32-client3";
-const char* mqttTopic = "BIB";
+const char* mqttTopic = "xxxxxxx";
 
 // MAC addresses of ESP1 and ESP2
 uint8_t receiverMAC1[] = {0xb0, 0xa7, 0x32, 0x2b, 0x23, 0x84}; // ESP1
 uint8_t receiverMAC2[] = {0xb0, 0xa7, 0x32, 0x2a, 0x8e, 0x70}; // ESP2
 
 // PIN for authentication
-const String pin = "123"; // Secret PIN for verification
+const String pin = "xxxxxx"; // Secret PIN for verification
 
 // Wi-Fi and MQTT clients
 WiFiClient espClient; 
