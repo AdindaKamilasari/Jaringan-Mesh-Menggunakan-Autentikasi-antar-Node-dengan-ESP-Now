@@ -9,6 +9,7 @@ Proyek ini merupakan implementasi jaringan mesh sederhana menggunakan ESP32 deng
 
 ## Software
 - Arduino IDE
+- MyMQTT
 
 ## Fitur Utama
 - 📡 Komunikasi mesh antar beberapa node ESP32 menggunakan ESP-NOW.
