@@ -2,3 +2,6 @@
 
 ## Skematik Rangkaian
 ![](./Docs/skematik)
+
+## Flowchart 
+![](./Docs/Flowchart)
