@@ -62,3 +62,6 @@ Output pada serial monitor dimana esp3 telah berhasil mengirim dan menerima pesa
 ## Catatan!!
 1. Setiap esp32/node menggunakan sketch/kode yang sama secara fungsi hanya saja berbeda konfigurasi alamat mac dan isi pesan.
 2. Proyek ini mengharuskan semua esp32/node dijalankan secara bersamaan.
+
+## Referensi
+[Getting Started with ESP-NOW (ESP32 with Arduino IDE)](https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/)
