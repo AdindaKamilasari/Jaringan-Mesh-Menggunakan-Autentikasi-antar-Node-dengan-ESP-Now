@@ -32,7 +32,7 @@ typedef struct Message {
 Message outgoingMessage; //deklarasi variable untuk pesan yg keluar
 Message incomingMessage;
 
-String esp1Message = "xxxxx"; // Message from ESP1
+String esp1Message = "Halo 1"; // Message from ESP1
 String esp2Message = "";       // Received from ESP2
 String esp3Message = "";       // Received from ESP3
 
