@@ -17,7 +17,7 @@ uint8_t receiverMAC1[] = {0xb0, 0xa7, 0x32, 0x2b, 0x23, 0x84}; // ESP1
 uint8_t receiverMAC3[] = {0x40, 0x91, 0x51, 0xfc, 0x07, 0xa8}; // ESP3
 
 // PIN for authentication
-const String pin = "1234"; // Secret PIN for verification
+const String pin = "xxxxxx"; // Secret PIN for verification
 
 // Wi-Fi and MQTT clients
 WiFiClient espClient;
