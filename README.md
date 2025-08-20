@@ -1,5 +1,22 @@
 # Jaringan-Mesh-Menggunakan-Autentikasi-antar-Node-dengan-ESP-Now
 
+## Deskripsi Proyek
+Proyek ini merupakan implementasi jaringan mesh sederhana menggunakan ESP32 dengan protokol komunikasi ESP-NOW, dilengkapi dengan mekanisme autentikasi antar-node menggunakan kombinasi alamat MAC dan PIN. Selain itu, sistem juga terintegrasi dengan MQTT broker agar data dari setiap node dapat diteruskan ke dashboard IoT.
+
+## Hardware
+- 3 Perangkat ESP32
+- 3 Kabel micro USB
+
+## Software
+- Arduino IDE
+
+## Fitur Utama
+- 📡 Komunikasi mesh antar beberapa node ESP32 menggunakan ESP-NOW.
+- 🔒 Autentikasi ganda (alamat MAC + PIN) untuk memastikan hanya node sah yang bisa ikut berkomunikasi.
+- 🌐 Integrasi dengan MQTT, sehingga data dari mesh network bisa dipantau melalui dashboard IoT.
+- 🛠️ Konfigurasi fleksibel, tiap ESP32 menggunakan kode yang sama namun dibedakan berdasarkan alamat MAC dan isi pesan.
+- ⚡ Sistem berjalan real-time dan semua node harus dijalankan bersamaan.
+
 ## Skematik Rangkaian
 ![](./Docs/skematik)
 
@@ -7,6 +24,8 @@
 ![](./Docs/Flowchart)
 
 ## Hasil Uji Konfigurasi sistem
+Setiap node diuji dengan cara menjalankan semua esp32 dan melihat di bagian serial Monitor untuk memastikan pesan terkirim dan diterima dengan baik, berikut adalah gambar dari serial monitornya :
+
 ### Output Serial Monitor ESP1
 ![](./Docs/Serial_Monitor_esp1)
 Output pada serial monitor dimana esp1 telah berhasil mengirim dan menerima pesan dari esp 2 dan esp 3.
@@ -60,8 +79,8 @@ Output pada serial monitor dimana esp3 telah berhasil mengirim dan menerima pesa
     Pada gambar diatas kita bisa melihat bahwa komunikasi antar node telah berjalan dengan baik, semua node bisa menerima pesan dari 2 node lainnya dan meneruskan pesan yang diterimanya beserta pesannya sendiri ke MQTT.
 
 ## Catatan!!
-1. Setiap esp32/node menggunakan sketch/kode yang sama secara fungsi hanya saja berbeda konfigurasi alamat mac dan isi pesan.
-2. Proyek ini mengharuskan semua esp32/node dijalankan secara bersamaan.
+- Setiap esp32/node menggunakan sketch/kode yang sama secara fungsi hanya saja berbeda konfigurasi alamat mac dan isi pesan.
+- Proyek ini mengharuskan semua esp32/node dijalankan secara bersamaan.
 
 ## Referensi
 [Getting Started with ESP-NOW (ESP32 with Arduino IDE)](https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/)
