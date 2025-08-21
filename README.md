@@ -85,3 +85,4 @@ Output pada serial monitor dimana esp3 telah berhasil mengirim dan menerima pesa
 
 ## Referensi
 [Getting Started with ESP-NOW (ESP32 with Arduino IDE)](https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/)
+[Mendapatkan MAC Address Pada ESP32 Menggunakan Arduino IDE](https://embeddednesia.com/v1/mendapatkan-mac-address-pada-esp32-menggunakan-arduino-de/#google_vignette)
